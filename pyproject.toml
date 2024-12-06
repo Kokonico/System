@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "system"
+version = "0.1.0"
+description = ""
+authors = ["Kokonico <kokonico@duck.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+ollama = "^0.4.2"
+duckduckgo-search = "^6.3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
