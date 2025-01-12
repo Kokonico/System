@@ -7,5 +7,10 @@ def speak(text):
     with open("tts.txt", "w") as file:
         file.write(text)
     # use the espeak command to read the file
-    os.system("espeak -v en-us -f tts.txt")
+    try:
+        os.system("espeak -v en-us -f tts.txt")
+    except OSError:
+        # espeak is not installed
+        # but it's not a requirement, so just pass
+        pass
     os.remove("tts.txt")
