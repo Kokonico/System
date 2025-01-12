@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "system"
+name = "aisys"
 version = "0.1.0"
-description = ""
+description = "lil' ai buddy"
 authors = ["Kokonico <kokonico@duck.com>"]
 readme = "README.md"
 scripts = { "aisys"="system.main:main" }
